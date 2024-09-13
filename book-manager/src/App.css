@@ -1,0 +1,134 @@
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: #282c34;
+  padding: 20px;
+  color: white;
+}
+
+/* Navigation styles */
+nav {
+  margin-top: 20px;
+}
+
+.nav-links {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.nav-item {
+  text-decoration: none;
+  color: #61dafb;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+/* Add hover effect */
+.nav-item:hover {
+  background-color: #61dafb;
+  color: #282c34;
+}
+
+/* Active link style (optional) */
+.nav-item-active {
+  background-color: #61dafb;
+  color: #282c34;
+}
+
+/* Main content area */
+main {
+  margin-top: 40px;
+  padding: 20px;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  color: #282c34;
+}
+
+/* Form styles for AddBook */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+form label {
+  font-weight: bold;
+}
+
+form input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+  max-width: 400px;
+}
+
+form button {
+  padding: 10px 20px;
+  background-color: #61dafb;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: #21a1f1;
+}
+
+/* BookList styles */
+ul {
+  list-style-type: none;
+  padding: 0;
+  display:flex
+}
+
+ul li {
+  margin: 20px 0;
+  text-align: left;
+}
+
+ul li strong {
+  color: #282c34;
+}
+
+img {
+  margin-top: 10px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  max-width: 200px;
+  height: auto;
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  background-color: #ccc;
+  margin: 20px 0;
+}
