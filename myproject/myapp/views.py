@@ -1,3 +1,12 @@
+# from rest_framework import viewsets
+# from .models import Book
+# from .serializers import BookSerializer
+
+# class BookViewSet(viewsets.ModelViewSet):
+#     queryset = Book.objects.all()
+#     serializer_class = BookSerializer
+
+
 from rest_framework.response import Response
 from rest_framework.views import APIView
 from rest_framework import status
@@ -37,10 +46,3 @@ class BookDetail(APIView):
             return Response(serializer.data)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
-    def delete(self, request, pk):
-        try:
-            book = Book.objects.get(pk=pk)
-        except Book.DoesNotExist:
-            return Response(status=status.HTTP_404_NOT_FOUND)
-        book.delete()
-        return Response(status=status.HTTP_204_NO_CONTENT)
